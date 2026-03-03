@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | Velamini</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#7311d4",
+                        "background-light": "#f7f6f8",
+                        "background-dark": "#191022",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased selection:bg-primary/30">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-primary/20 px-6 md:px-20 lg:px-40 py-4 sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md z-50">
+<div class="flex items-center gap-4">
+<div class="size-8 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-slate-900 dark:text-white text-xl font-bold leading-tight tracking-tight">Velamini</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<div class="hidden md:flex items-center gap-9">
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium" href="#mission">Mission</a>
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium" href="#vision">Vision</a>
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium" href="#values">Values</a>
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium" href="#tech">Tech Stack</a>
+</div>
+<button class="flex min-w-[100px] cursor-pointer items-center justify-center rounded-xl h-10 px-5 bg-primary hover:bg-primary/90 text-white text-sm font-bold transition-all shadow-lg shadow-primary/20">
+<span>Contact Us</span>
+</button>
+</div>
+</header>
+<main class="flex-1">
+<div class="max-w-[1200px] mx-auto px-6 py-12">
+<section class="mb-20" id="hero">
+<div class="relative w-full aspect-[21/9] rounded-xl overflow-hidden bg-primary/10 mb-12">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Abstract flowing purple and blue digital waves" style="background-image: linear-gradient(to top, rgba(25, 16, 34, 1) 0%, rgba(25, 16, 34, 0.4) 100%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuBGVAj-jIIQRNFkAOWZWGZtVHKwbBFPfB415BZnlDdfo6ZYWGAegDhp06qCuwhA5h5JPP5CiDMrkfRPVBrZGcl2o9QNL5OfZDKhRh9CsMnoPn9AHiABj7z36yOh4lCBeUhe41r42wOQhT0ZaDayibJAJqIGcyLIo7gJ0-TVEeO6raGe1Ts_qhk5YvCJLfd4Wm3P04PLUlC9Ph5fl72_m8N3jQ5-S8fECu6zKfyB-KrG_-KCtmTruu4gSLRE9t1IQPPLrQueRPKR_Kg')"></div>
+<div class="absolute inset-0 flex flex-col justify-end p-8 md:p-16">
+<span class="text-primary font-bold tracking-widest text-sm uppercase mb-4">Redefining Intelligence</span>
+<h1 class="text-4xl md:text-6xl font-black text-white leading-tight max-w-2xl">Amplify Human Potential</h1>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start" id="mission">
+<div class="flex flex-col gap-6">
+<h2 class="text-3xl md:text-5xl font-black text-slate-900 dark:text-white leading-tight">Our Mission</h2>
+<p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+                                    We are dedicated to building the future of intelligence to empower every individual on Earth. At Velamini, we don't believe in AI as a replacement, but as a profound catalyst for human creativity and problem-solving.
+                                </p>
+<div class="flex gap-4">
+<div class="h-1 w-20 bg-primary rounded-full"></div>
+</div>
+</div>
+<div class="bg-primary/5 dark:bg-primary/10 p-8 rounded-xl border border-primary/20">
+<p class="text-slate-700 dark:text-slate-300 italic text-xl">
+                                    "Our goal is to make the world's most sophisticated cognitive tools accessible to everyone, ensuring the next giant leap for mankind is digital."
+                                </p>
+<div class="mt-6 flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white">
+<span class="material-symbols-outlined">person</span>
+</div>
+<div>
+<p class="font-bold text-slate-900 dark:text-white">Elena Vance</p>
+<p class="text-sm text-slate-500">CEO &amp; Founder</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="mb-24 py-16 border-y border-slate-200 dark:border-primary/10" id="vision">
+<div class="max-w-3xl">
+<h2 class="text-primary text-sm font-bold uppercase tracking-[0.2em] mb-4">The Vision</h2>
+<h3 class="text-3xl font-bold text-slate-900 dark:text-white mb-6">A Seamless Extension of Thought</h3>
+<p class="text-xl text-slate-600 dark:text-slate-400 leading-relaxed">
+                                At Velamini, we envision a world where AI serves as a seamless extension of human thought, breaking barriers of productivity and creativity. We're building an ecosystem where complex tasks are simplified and the distance between idea and execution is zero.
+                            </p>
+</div>
+</section>
+<section class="mb-24" id="values">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-black text-slate-900 dark:text-white mb-4">Core Values</h2>
+<p class="text-slate-600 dark:text-slate-400">The principles that guide every line of code we write.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="p-8 rounded-xl bg-white dark:bg-primary/5 border border-slate-200 dark:border-primary/20 hover:border-primary transition-all group">
+<div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">shield</span>
+</div>
+<h4 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Privacy First</h4>
+<p class="text-slate-600 dark:text-slate-400">Your data is your own. We build with sovereign encryption and local-first principles to ensure absolute security.</p>
+</div>
+<div class="p-8 rounded-xl bg-white dark:bg-primary/5 border border-slate-200 dark:border-primary/20 hover:border-primary transition-all group">
+<div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">bolt</span>
+</div>
+<h4 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Radical Efficiency</h4>
+<p class="text-slate-600 dark:text-slate-400">We optimize for speed and low latency. Intelligence should be instant and available the moment you need it.</p>
+</div>
+<div class="p-8 rounded-xl bg-white dark:bg-primary/5 border border-slate-200 dark:border-primary/20 hover:border-primary transition-all group">
+<div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">diversity_3</span>
+</div>
+<h4 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Inclusive AI</h4>
+<p class="text-slate-600 dark:text-slate-400">Democratizing access to high-level reasoning for every culture, language, and professional background.</p>
+</div>
+</div>
+</section>
+<section class="mb-24 p-12 rounded-2xl bg-slate-900 text-white relative overflow-hidden" id="tech">
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
+<svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 100 100">
+<path d="M0 100 L50 0 L100 100 Z" fill="currentColor"></path>
+</svg>
+</div>
+<div class="relative z-10">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-12">
+<div>
+<h2 class="text-3xl font-black mb-2">Our Tech Stack</h2>
+<p class="text-slate-400">Built with the cutting-edge tools for scale and performance.</p>
+</div>
+<button class="px-6 py-3 bg-white text-slate-900 rounded-xl font-bold hover:bg-slate-200 transition-colors">
+                                    View Documentation
+                                </button>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<div class="flex flex-col items-center gap-4 p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
+<div class="size-12 flex items-center justify-center bg-white/10 rounded-full">
+<span class="material-symbols-outlined">terminal</span>
+</div>
+<span class="font-bold">Next.js 14</span>
+</div>
+<div class="flex flex-col items-center gap-4 p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
+<div class="size-12 flex items-center justify-center bg-white/10 rounded-full">
+<span class="material-symbols-outlined">neurology</span>
+</div>
+<span class="font-bold">DeepSeek V2</span>
+</div>
+<div class="flex flex-col items-center gap-4 p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
+<div class="size-12 flex items-center justify-center bg-white/10 rounded-full">
+<span class="material-symbols-outlined">database</span>
+</div>
+<span class="font-bold">Supabase</span>
+</div>
+<div class="flex flex-col items-center gap-4 p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
+<div class="size-12 flex items-center justify-center bg-white/10 rounded-full">
+<span class="material-symbols-outlined">layers</span>
+</div>
+<span class="font-bold">Tailwind CSS</span>
+</div>
+</div>
+</div>
+</section>
+<section class="text-center py-20">
+<h2 class="text-4xl font-black text-slate-900 dark:text-white mb-6">Join the Revolution</h2>
+<p class="text-slate-600 dark:text-slate-400 max-w-xl mx-auto mb-10 text-lg">
+                            We're always looking for brilliant minds who want to shape the future of human-AI collaboration.
+                        </p>
+<div class="flex flex-wrap justify-center gap-4">
+<button class="px-8 py-4 bg-primary text-white rounded-xl font-bold shadow-xl shadow-primary/20 hover:scale-105 transition-transform">
+                                Explore Careers
+                            </button>
+<button class="px-8 py-4 bg-transparent border border-primary text-primary dark:text-white rounded-xl font-bold hover:bg-primary/10 transition-colors">
+                                Get in Touch
+                            </button>
+</div>
+</section>
+</div>
+</main>
+<footer class="border-t border-slate-200 dark:border-primary/10 py-12 px-6 md:px-20 lg:px-40 bg-background-light dark:bg-background-dark">
+<div class="flex flex-col md:flex-row justify-between gap-10">
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-2">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<span class="text-lg font-bold dark:text-white">Velamini</span>
+</div>
+<p class="text-slate-500 text-sm max-w-xs">Building the bridge between human thought and digital action.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-12">
+<div class="flex flex-col gap-4">
+<span class="font-bold dark:text-white text-sm">Company</span>
+<a class="text-slate-500 hover:text-primary transition-colors text-sm" href="#">Blog</a>
+<a class="text-slate-500 hover:text-primary transition-colors text-sm" href="#">News</a>
+<a class="text-slate-500 hover:text-primary transition-colors text-sm" href="#">Careers</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-bold dark:text-white text-sm">Legal</span>
+<a class="text-slate-500 hover:text-primary transition-colors text-sm" href="#">Privacy</a>
+<a class="text-slate-500 hover:text-primary transition-colors text-sm" href="#">Terms</a>
+<a class="text-slate-500 hover:text-primary transition-colors text-sm" href="#">Ethics</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-bold dark:text-white text-sm">Social</span>
+<a class="text-slate-500 hover:text-primary transition-colors text-sm" href="#">Twitter</a>
+<a class="text-slate-500 hover:text-primary transition-colors text-sm" href="#">LinkedIn</a>
+<a class="text-slate-500 hover:text-primary transition-colors text-sm" href="#">GitHub</a>
+</div>
+</div>
+</div>
+<div class="mt-12 pt-8 border-t border-slate-200 dark:border-primary/10 flex justify-between items-center text-xs text-slate-500">
+<span>© 2024 Velamini Inc. All rights reserved.</span>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">public</span>
+<span>Global Infrastructure</span>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</body></html>

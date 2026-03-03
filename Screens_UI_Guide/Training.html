@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Velamini - Training Identity</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#7311d4",
+                        "background-light": "#f7f6f8",
+                        "background-dark": "#191022",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #473b54;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased overflow-hidden">
+<div class="flex h-screen w-full">
+<!-- Sidebar -->
+<aside class="w-64 flex flex-col border-r border-slate-200 dark:border-primary/20 bg-white dark:bg-background-dark/50 shrink-0">
+<div class="p-6 flex items-center gap-3">
+<div class="size-10 rounded-full bg-primary flex items-center justify-center text-white">
+<span class="material-symbols-outlined">auto_awesome</span>
+</div>
+<h1 class="text-xl font-bold tracking-tight text-primary">Velamini</h1>
+</div>
+<nav class="flex-1 px-4 space-y-1">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-primary/10 transition-colors" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="text-sm font-medium">Dashboard</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary text-white transition-colors" href="#">
+<span class="material-symbols-outlined">model_training</span>
+<span class="text-sm font-medium">Training</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-primary/10 transition-colors" href="#">
+<span class="material-symbols-outlined">chat</span>
+<span class="text-sm font-medium">Chat</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-primary/10 transition-colors" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-sm font-medium">Profile</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-primary/10 transition-colors" href="#">
+<span class="material-symbols-outlined">description</span>
+<span class="text-sm font-medium">Resume</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-primary/10 transition-colors" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="text-sm font-medium">Settings</span>
+</a>
+</nav>
+<div class="p-4 mt-auto">
+<div class="p-4 rounded-xl bg-primary/10 border border-primary/20">
+<p class="text-xs font-semibold text-primary uppercase tracking-wider mb-2">Pro Plan</p>
+<p class="text-xs text-slate-500 dark:text-slate-400 mb-3">Unlock advanced AI personality features.</p>
+<button class="w-full py-2 bg-primary hover:bg-primary/90 text-white text-xs font-bold rounded-lg transition-all">
+                        Upgrade Now
+                    </button>
+</div>
+</div>
+</aside>
+<!-- Main Content -->
+<main class="flex-1 flex flex-col min-w-0 bg-background-light dark:bg-background-dark custom-scrollbar overflow-y-auto">
+<!-- Header -->
+<header class="p-8 pb-0">
+<div class="max-w-5xl mx-auto w-full">
+<h2 class="text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100">Training</h2>
+<p class="text-slate-500 dark:text-slate-400 mt-2 text-lg">Build your intelligent virtual self step by step</p>
+</div>
+</header>
+<!-- Horizontal Stepper -->
+<div class="mt-8 border-b border-slate-200 dark:border-primary/20 sticky top-0 bg-background-light dark:bg-background-dark z-10">
+<div class="max-w-5xl mx-auto px-8">
+<div class="flex items-center gap-8 overflow-x-auto no-scrollbar">
+<button class="flex flex-col items-center gap-2 py-4 border-b-2 border-primary text-primary transition-all shrink-0">
+<span class="material-symbols-outlined">fingerprint</span>
+<span class="text-xs font-bold uppercase tracking-widest">Identity</span>
+</button>
+<button class="flex flex-col items-center gap-2 py-4 border-b-2 border-transparent text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition-all shrink-0">
+<span class="material-symbols-outlined">school</span>
+<span class="text-xs font-bold uppercase tracking-widest">Education</span>
+</button>
+<button class="flex flex-col items-center gap-2 py-4 border-b-2 border-transparent text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition-all shrink-0">
+<span class="material-symbols-outlined">work</span>
+<span class="text-xs font-bold uppercase tracking-widest">Experience</span>
+</button>
+<button class="flex flex-col items-center gap-2 py-4 border-b-2 border-transparent text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition-all shrink-0">
+<span class="material-symbols-outlined">psychology</span>
+<span class="text-xs font-bold uppercase tracking-widest">Skills</span>
+</button>
+<button class="flex flex-col items-center gap-2 py-4 border-b-2 border-transparent text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition-all shrink-0">
+<span class="material-symbols-outlined">folder_special</span>
+<span class="text-xs font-bold uppercase tracking-widest">Projects</span>
+</button>
+<button class="flex flex-col items-center gap-2 py-4 border-b-2 border-transparent text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition-all shrink-0">
+<span class="material-symbols-outlined">emoji_events</span>
+<span class="text-xs font-bold uppercase tracking-widest">Awards</span>
+</button>
+<button class="flex flex-col items-center gap-2 py-4 border-b-2 border-transparent text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition-all shrink-0">
+<span class="material-symbols-outlined">share</span>
+<span class="text-xs font-bold uppercase tracking-widest">Social</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Form Area -->
+<section class="p-8 flex-1">
+<div class="max-w-5xl mx-auto">
+<div class="bg-white dark:bg-white/5 rounded-xl border border-slate-200 dark:border-primary/10 p-8 shadow-sm">
+<h3 class="text-xl font-semibold mb-6">Personal Information</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Field: Full Name -->
+<div class="flex flex-col gap-2">
+<label class="text-sm font-medium text-slate-700 dark:text-slate-300">Full Name</label>
+<input class="w-full rounded-lg border border-slate-200 dark:border-primary/20 bg-slate-50 dark:bg-background-dark/50 p-3 text-slate-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="John Doe" type="text"/>
+</div>
+<!-- Field: Birth Date -->
+<div class="flex flex-col gap-2">
+<label class="text-sm font-medium text-slate-700 dark:text-slate-300">Birth Date</label>
+<input class="w-full rounded-lg border border-slate-200 dark:border-primary/20 bg-slate-50 dark:bg-background-dark/50 p-3 text-slate-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" type="date"/>
+</div>
+<!-- Field: Birth Place -->
+<div class="flex flex-col gap-2">
+<label class="text-sm font-medium text-slate-700 dark:text-slate-300">Birth Place</label>
+<input class="w-full rounded-lg border border-slate-200 dark:border-primary/20 bg-slate-50 dark:bg-background-dark/50 p-3 text-slate-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="San Francisco, USA" type="text"/>
+</div>
+<!-- Field: Current Location -->
+<div class="flex flex-col gap-2">
+<label class="text-sm font-medium text-slate-700 dark:text-slate-300">Current Location</label>
+<input class="w-full rounded-lg border border-slate-200 dark:border-primary/20 bg-slate-50 dark:bg-background-dark/50 p-3 text-slate-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="New York, USA" type="text"/>
+</div>
+<!-- Field: Languages -->
+<div class="flex flex-col gap-2">
+<label class="text-sm font-medium text-slate-700 dark:text-slate-300">Languages</label>
+<input class="w-full rounded-lg border border-slate-200 dark:border-primary/20 bg-slate-50 dark:bg-background-dark/50 p-3 text-slate-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="English, Spanish, French" type="text"/>
+</div>
+<!-- Field: Relationship Status -->
+<div class="flex flex-col gap-2">
+<label class="text-sm font-medium text-slate-700 dark:text-slate-300">Relationship Status</label>
+<select class="w-full rounded-lg border border-slate-200 dark:border-primary/20 bg-slate-50 dark:bg-background-dark/50 p-3 text-slate-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all">
+<option>Single</option>
+<option>In a relationship</option>
+<option>Married</option>
+<option>Prefer not to say</option>
+</select>
+</div>
+<!-- Field: Hobbies -->
+<div class="flex flex-col gap-2">
+<label class="text-sm font-medium text-slate-700 dark:text-slate-300">Hobbies</label>
+<input class="w-full rounded-lg border border-slate-200 dark:border-primary/20 bg-slate-50 dark:bg-background-dark/50 p-3 text-slate-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="Hiking, Photography, Chess" type="text"/>
+</div>
+<!-- Field: Favorite Food -->
+<div class="flex flex-col gap-2">
+<label class="text-sm font-medium text-slate-700 dark:text-slate-300">Favorite Food</label>
+<input class="w-full rounded-lg border border-slate-200 dark:border-primary/20 bg-slate-50 dark:bg-background-dark/50 p-3 text-slate-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="Sushi, Pasta, Tacos" type="text"/>
+</div>
+<!-- Field: Bio -->
+<div class="flex flex-col gap-2 md:col-span-2">
+<label class="text-sm font-medium text-slate-700 dark:text-slate-300">Bio</label>
+<textarea class="w-full rounded-lg border border-slate-200 dark:border-primary/20 bg-slate-50 dark:bg-background-dark/50 p-3 text-slate-900 dark:text-white focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all resize-none" placeholder="Tell us about yourself, your values, and what makes you unique..." rows="4"></textarea>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="mt-10 flex items-center justify-end gap-4">
+<button class="px-6 py-3 rounded-xl font-semibold text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-primary/10 transition-all border border-slate-200 dark:border-primary/20">
+                                Save Progress
+                            </button>
+<button class="px-8 py-3 rounded-xl font-semibold bg-primary text-white hover:bg-primary/90 shadow-lg shadow-primary/20 transition-all flex items-center gap-2">
+                                Next Step
+                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Progress Footer Info -->
+<div class="mt-8 flex items-center justify-between text-slate-500 dark:text-slate-400 text-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-green-500">check_circle</span>
+                            Step 1 of 7: Identity Completed (14%)
+                        </div>
+<div class="flex items-center gap-4">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-xs">history</span> Last saved 2 mins ago</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+</div>
+</body></html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#7311d4",
+                        "background-light": "#f7f6f8",
+                        "background-dark": "#191022",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #302839;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
+<div class="relative flex h-screen w-full flex-col overflow-hidden">
+<!-- Top Navigation Bar -->
+<header class="flex h-16 items-center justify-between border-b border-slate-200 dark:border-primary/20 bg-background-light dark:bg-background-dark px-8 z-20">
+<div class="flex items-center gap-3">
+<div class="flex size-8 items-center justify-center rounded-lg bg-primary text-white">
+<span class="material-symbols-outlined text-xl">layers</span>
+</div>
+<h2 class="text-xl font-bold tracking-tight">Velamini</h2>
+</div>
+<div class="flex flex-1 justify-center max-w-xl px-10">
+<div class="relative w-full group">
+<div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none text-slate-400">
+<span class="material-symbols-outlined text-sm">search</span>
+</div>
+<input class="block w-full rounded-lg border-0 bg-slate-100 dark:bg-primary/10 py-2 pl-10 pr-3 text-slate-900 dark:text-slate-100 placeholder-slate-400 focus:ring-2 focus:ring-primary sm:text-sm" placeholder="Search settings..." type="text"/>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="flex size-10 items-center justify-center rounded-full hover:bg-slate-100 dark:hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<div class="h-8 w-8 rounded-full bg-primary/30 border border-primary/50 overflow-hidden">
+<div class="w-full h-full bg-cover bg-center" data-alt="User profile avatar portrait" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD1E0dVhMdse7yXafsIX7UwMPNMP1aK2Jdvz0Bqbrea78nX6lp8VTezLi0M4dXwtLkJKpn2LvinicsXyWBdsVciiqxDNb1DkXLiuqhvgdxxueoGbGCj61JZi_U7WJ3Wexx9xRxHhyNfBkcHmjsRyIlDDk7Px-g1rzuVgn3o6vPECNH9Kw_nYyuKtagWoWQhpiXh7ogfu7zjrCuVl9qlJO9t0HecTZW--OLqRyJTV8rV1RSp3MXC7uzDAN8IMkJkPVKiNvH-TgYV2eA')"></div>
+</div>
+</div>
+</header>
+<div class="flex flex-1 overflow-hidden">
+<!-- Sidebar Navigation -->
+<aside class="w-64 border-r border-slate-200 dark:border-primary/20 bg-background-light dark:bg-background-dark p-4 flex flex-col gap-2 overflow-y-auto custom-scrollbar">
+<div class="mb-4 px-2">
+<p class="text-xs font-semibold uppercase tracking-wider text-slate-400">Preferences</p>
+</div>
+<nav class="flex flex-col gap-1">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary text-white font-medium" href="#">
+<span class="material-symbols-outlined text-[20px]">settings</span>
+<span>General</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-primary/10 hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">person</span>
+<span>Account</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-primary/10 hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">notifications</span>
+<span>Notifications</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-primary/10 hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">palette</span>
+<span>Appearance</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-primary/10 hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">lock</span>
+<span>Privacy &amp; Security</span>
+</a>
+</nav>
+<div class="mt-auto pt-4 border-t border-slate-200 dark:border-primary/20">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-primary/10 transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">help</span>
+<span>Help Center</span>
+</a>
+<div class="mt-4 p-3 rounded-xl bg-primary/10 border border-primary/20">
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-primary text-sm">info</span>
+<span class="text-xs font-bold text-slate-800 dark:text-slate-200">System Status</span>
+</div>
+<p class="text-[10px] text-slate-500">All systems operational. Version 2.4.0-stable</p>
+</div>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-1 overflow-y-auto custom-scrollbar bg-slate-50 dark:bg-[#141118]/50 p-8">
+<div class="max-w-3xl mx-auto space-y-12">
+<!-- Section Header -->
+<div>
+<h1 class="text-3xl font-bold tracking-tight">Settings</h1>
+<p class="text-slate-500 dark:text-slate-400 mt-2">Update your preferences and manage your account details.</p>
+</div>
+<!-- Notifications Group -->
+<section class="space-y-4">
+<div class="flex items-center gap-2 border-b border-slate-200 dark:border-primary/20 pb-2">
+<span class="material-symbols-outlined text-primary">notifications_active</span>
+<h2 class="text-xl font-bold">Notifications</h2>
+</div>
+<div class="grid gap-2">
+<div class="flex items-center justify-between p-4 rounded-xl bg-white dark:bg-primary/5 border border-slate-200 dark:border-primary/10">
+<div>
+<h3 class="font-medium">Push Notifications</h3>
+<p class="text-sm text-slate-500">Receive alerts on your desktop browser</p>
+</div>
+<label class="relative inline-flex cursor-pointer items-center">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-slate-200 peer-focus:outline-none dark:bg-slate-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<div class="flex items-center justify-between p-4 rounded-xl bg-white dark:bg-primary/5 border border-slate-200 dark:border-primary/10">
+<div>
+<h3 class="font-medium">Email Digests</h3>
+<p class="text-sm text-slate-500">Weekly summary of your activity</p>
+</div>
+<label class="relative inline-flex cursor-pointer items-center">
+<input class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-slate-200 peer-focus:outline-none dark:bg-slate-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+</section>
+<!-- Appearance Group -->
+<section class="space-y-4">
+<div class="flex items-center gap-2 border-b border-slate-200 dark:border-primary/20 pb-2">
+<span class="material-symbols-outlined text-primary">palette</span>
+<h2 class="text-xl font-bold">Appearance</h2>
+</div>
+<div class="grid gap-2">
+<div class="flex items-center justify-between p-4 rounded-xl bg-white dark:bg-primary/5 border border-slate-200 dark:border-primary/10">
+<div>
+<h3 class="font-medium">Dark Mode</h3>
+<p class="text-sm text-slate-500">Switch between light and dark themes</p>
+</div>
+<label class="relative inline-flex cursor-pointer items-center">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-slate-200 peer-focus:outline-none dark:bg-slate-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<div class="p-4 rounded-xl bg-white dark:bg-primary/5 border border-slate-200 dark:border-primary/10">
+<h3 class="font-medium mb-3">Accent Color</h3>
+<div class="flex gap-4">
+<button class="size-8 rounded-full bg-primary ring-2 ring-primary ring-offset-2 ring-offset-background-dark"></button>
+<button class="size-8 rounded-full bg-blue-500 hover:scale-110 transition-transform"></button>
+<button class="size-8 rounded-full bg-emerald-500 hover:scale-110 transition-transform"></button>
+<button class="size-8 rounded-full bg-amber-500 hover:scale-110 transition-transform"></button>
+<button class="size-8 rounded-full bg-rose-500 hover:scale-110 transition-transform"></button>
+</div>
+</div>
+</div>
+</section>
+<!-- Account Group -->
+<section class="space-y-4">
+<div class="flex items-center gap-2 border-b border-slate-200 dark:border-primary/20 pb-2">
+<span class="material-symbols-outlined text-primary">person</span>
+<h2 class="text-xl font-bold">Account</h2>
+</div>
+<div class="grid gap-2">
+<div class="flex items-center justify-between p-4 rounded-xl bg-white dark:bg-primary/5 border border-slate-200 dark:border-primary/10">
+<div>
+<h3 class="font-medium">Change Password</h3>
+<p class="text-sm text-slate-500">Last updated 3 months ago</p>
+</div>
+<button class="px-4 py-2 rounded-lg bg-slate-200 dark:bg-primary/20 hover:bg-primary hover:text-white transition-colors text-sm font-semibold">Update</button>
+</div>
+<div class="flex items-center justify-between p-4 rounded-xl bg-rose-500/5 border border-rose-500/20">
+<div>
+<h3 class="font-medium text-rose-500">Delete Account</h3>
+<p class="text-sm text-slate-500">Permanently remove all your data</p>
+</div>
+<button class="px-4 py-2 rounded-lg bg-rose-500 text-white hover:bg-rose-600 transition-colors text-sm font-semibold">Deactivate</button>
+</div>
+</div>
+</section>
+<!-- About Group -->
+<section class="space-y-4">
+<div class="flex items-center gap-2 border-b border-slate-200 dark:border-primary/20 pb-2">
+<span class="material-symbols-outlined text-primary">info</span>
+<h2 class="text-xl font-bold">About</h2>
+</div>
+<div class="grid gap-2">
+<div class="flex items-center justify-between p-4 rounded-xl bg-white dark:bg-primary/5 border border-slate-200 dark:border-primary/10">
+<span class="font-medium">Privacy Policy</span>
+<a class="text-primary hover:underline flex items-center gap-1" href="#">
+<span>Read</span>
+<span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+<div class="flex items-center justify-between p-4 rounded-xl bg-white dark:bg-primary/5 border border-slate-200 dark:border-primary/10">
+<span class="font-medium text-slate-500">App Version</span>
+<span class="text-sm font-mono bg-slate-100 dark:bg-primary/20 px-2 py-1 rounded">v2.4.0-stable</span>
+</div>
+</div>
+</section>
+<!-- Footer padding -->
+<div class="h-12"></div>
+</div>
+</main>
+</div>
+</div>
+</body></html>

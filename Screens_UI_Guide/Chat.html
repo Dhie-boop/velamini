@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Velamini Chat Interface</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#7311d4",
+                        "background-light": "#f7f6f8",
+                        "background-dark": "#191022",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .grid-pattern {
+            background-image: radial-gradient(circle, rgba(115, 17, 212, 0.1) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 overflow-hidden">
+<div class="flex h-screen w-full">
+<!-- Sidebar Navigation -->
+<aside class="w-72 border-r border-primary/10 bg-background-light dark:bg-background-dark/50 flex flex-col shrink-0">
+<div class="p-6 flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-white shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined">auto_awesome</span>
+</div>
+<div>
+<h1 class="text-lg font-bold tracking-tight">Velamini</h1>
+<p class="text-xs text-slate-500 dark:text-primary/60 font-medium">PREMIUM EDITION</p>
+</div>
+</div>
+<nav class="flex-1 px-4 py-4 flex flex-col gap-1">
+<a class="flex items-center gap-3 px-4 py-3 rounded-xl transition-all hover:bg-primary/10 text-slate-600 dark:text-slate-400" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-medium">Home</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-xl bg-primary text-white shadow-md shadow-primary/20" href="#">
+<span class="material-symbols-outlined">chat_bubble</span>
+<span class="font-medium">Chats</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-xl transition-all hover:bg-primary/10 text-slate-600 dark:text-slate-400" href="#">
+<span class="material-symbols-outlined">smart_toy</span>
+<span class="font-medium">Assistant</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-xl transition-all hover:bg-primary/10 text-slate-600 dark:text-slate-400" href="#">
+<span class="material-symbols-outlined">folder</span>
+<span class="font-medium">Archive</span>
+</a>
+<div class="mt-8 px-4 mb-2">
+<p class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Recent Projects</p>
+</div>
+<a class="flex items-center gap-3 px-4 py-2 rounded-xl text-sm text-slate-500 hover:text-primary" href="#">
+<span class="w-2 h-2 rounded-full bg-primary/40"></span>
+<span>Q4 Design Specs</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 rounded-xl text-sm text-slate-500 hover:text-primary" href="#">
+<span class="w-2 h-2 rounded-full bg-blue-500/40"></span>
+<span>Marketing Assets</span>
+</a>
+</nav>
+<div class="p-4 border-t border-primary/10">
+<a class="flex items-center gap-3 px-4 py-3 rounded-xl transition-all hover:bg-primary/10 text-slate-600 dark:text-slate-400" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-medium">Settings</span>
+</a>
+<div class="mt-4 flex items-center gap-3 px-2">
+<div class="w-10 h-10 rounded-full border-2 border-primary/30 p-0.5">
+<img alt="User Profile" class="w-full h-full rounded-full object-cover" data-alt="Close up profile picture of a person" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFQrcfPyC2e59pHvxFlKl7lEBchLCRPqx7uyUgkSXNYekuR1ank5B9_F4UP7JVr8kRqTDY_3J-GYYz9kLjySAhciG99bpM6pqEpemBd3yU3zZwojSa5grsoyxm6376xR692eukmpZ1K8EwbSE1a97BahW7hq5t9CCdOyA5crlmEtXJVU2uzE0-LCbxQmJsjkqtND87i1CdPS0pzZAqPdOx7aLyQg_uyOKrnbUTONgHWgmPz0SY0vVFPNJ6TlY6dUppmypWZsGJUAw"/>
+</div>
+<div class="flex-1 min-w-0">
+<p class="text-sm font-semibold truncate">Alex Rivera</p>
+<p class="text-[10px] text-slate-500 truncate">alex@velamini.com</p>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Chat Area -->
+<main class="flex-1 flex flex-col relative overflow-hidden grid-pattern">
+<!-- Header -->
+<header class="h-20 border-b border-primary/10 flex items-center justify-between px-8 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md z-10">
+<div class="flex flex-col">
+<h2 class="text-xl font-bold flex items-center gap-2">
+                        Chat with Myself
+                        <span class="material-symbols-outlined text-primary text-sm">lock</span>
+</h2>
+<p class="text-xs text-slate-500 font-medium">Personal workspace and reminders</p>
+</div>
+<div class="flex items-center gap-4">
+<button class="w-10 h-10 rounded-full flex items-center justify-center hover:bg-primary/10 text-slate-500">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="w-10 h-10 rounded-full flex items-center justify-center hover:bg-primary/10 text-slate-500">
+<span class="material-symbols-outlined">more_vert</span>
+</button>
+<div class="h-8 w-px bg-primary/10 mx-2"></div>
+<button class="bg-primary text-white px-4 py-2 rounded-lg text-sm font-medium flex items-center gap-2 shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined text-sm">share</span>
+                        Share
+                    </button>
+</div>
+</header>
+<!-- Chat History -->
+<div class="flex-1 overflow-y-auto p-8 space-y-8">
+<!-- Date Separator -->
+<div class="flex justify-center">
+<span class="px-3 py-1 bg-primary/5 rounded-full text-[10px] font-bold text-primary tracking-widest uppercase">Today</span>
+</div>
+<!-- Message: Assistant -->
+<div class="flex gap-4 items-end max-w-3xl">
+<div class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center shrink-0 shadow-lg">
+<span class="material-symbols-outlined text-xs text-primary">smart_toy</span>
+</div>
+<div class="flex flex-col gap-1.5 items-start">
+<span class="text-[10px] font-bold text-slate-500 ml-1">VELAMINI ASSISTANT</span>
+<div class="bg-slate-800 dark:bg-slate-800/80 text-slate-100 p-4 rounded-xl rounded-bl-none shadow-xl shadow-black/5 border border-slate-700/50">
+<p class="text-sm leading-relaxed">Hello Alex! This is your private space. You can draft messages, save links, or talk to me here. How can I help you organize your day?</p>
+</div>
+</div>
+</div>
+<!-- Message: Me -->
+<div class="flex gap-4 items-end justify-end max-w-3xl ml-auto">
+<div class="flex flex-col gap-1.5 items-end">
+<span class="text-[10px] font-bold text-primary mr-1">ME</span>
+<div class="bg-primary text-white p-4 rounded-xl rounded-br-none shadow-xl shadow-primary/20">
+<p class="text-sm leading-relaxed">Remind me to review the quarterly design specs at 4 PM today and send the final feedback to the UI team.</p>
+</div>
+<span class="text-[10px] text-slate-400 italic">Delivered</span>
+</div>
+<div class="w-8 h-8 rounded-lg bg-primary/20 border border-primary/30 overflow-hidden shrink-0">
+<img alt="User Avatar" class="w-full h-full object-cover" data-alt="Close up profile picture of a person" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0bdGD7C7HA6FhWuhOUHxiE0ys3u7bW51Nr4Ux2_qyNUUdqgvzj3GdDEHfyAOWVkT4ZFL0cuan4h-iwCaMwNKoG28RWrELuAm8QERDIUUQbq-yDh-xOkKciSZoBk3shJV9AKx9vC3Dpsd0IWSkIqCzLpiDmzevHX4t_8Z7y7h7zP4FgVwh4K9rS_FiTml8940wZi8BuCSvzk6yckzaFu414wZ3213WrXQayXwa3uTk49omZygYJC1o03tK1MYbNwsQGK-00-KWfVc"/>
+</div>
+</div>
+<!-- Message: Assistant -->
+<div class="flex gap-4 items-end max-w-3xl">
+<div class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center shrink-0 shadow-lg">
+<span class="material-symbols-outlined text-xs text-primary">smart_toy</span>
+</div>
+<div class="flex flex-col gap-1.5 items-start">
+<span class="text-[10px] font-bold text-slate-500 ml-1">VELAMINI ASSISTANT</span>
+<div class="bg-slate-800 dark:bg-slate-800/80 text-slate-100 p-4 rounded-xl rounded-bl-none shadow-xl shadow-black/5 border border-slate-700/50">
+<p class="text-sm leading-relaxed">Understood. I've added a reminder for 4:00 PM regarding the design specs and the feedback task. Would you like me to prepare a draft for the UI team based on your previous notes?</p>
+</div>
+</div>
+</div>
+<!-- Message: Me -->
+<div class="flex gap-4 items-end justify-end max-w-3xl ml-auto">
+<div class="flex flex-col gap-1.5 items-end">
+<span class="text-[10px] font-bold text-primary mr-1">ME</span>
+<div class="bg-primary text-white p-4 rounded-xl rounded-br-none shadow-xl shadow-primary/20">
+<p class="text-sm leading-relaxed">Yes, please! Use the bullet points from our meeting yesterday. Also, save this link for later: <a class="underline underline-offset-2 opacity-80" href="#">https://design-trends-2024.com/specs</a></p>
+</div>
+</div>
+<div class="w-8 h-8 rounded-lg bg-primary/20 border border-primary/30 overflow-hidden shrink-0">
+<img alt="User Avatar" class="w-full h-full object-cover" data-alt="Close up profile picture of a person" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDP4xNI9uCK8eFAlaelknEVSP8SXuWUFdEl9ziePyMtnCpf7uJDHW4nWD_l2aAT9cq4INdjapKBHI5FtGeed55sf5g8IGDgpFBcFdiaFi4w_EifKNLdv_cNYje1JJQ0edf7Mz5RrF6RKH7cSzxWNkudYVRuVY4MFb9XizAqz_qXtDCo67ci03ZX1nO-hX39eENOlIsWQHBGvbdpWuIh0oVKLvxzAhDUypKXRkn0EMldQr05_6gfloNL1Dw041cp8SN0frWfW8-ie4s"/>
+</div>
+</div>
+</div>
+<!-- Input Bar -->
+<div class="p-8 pt-2">
+<div class="max-w-4xl mx-auto relative">
+<div class="absolute inset-y-0 left-4 flex items-center gap-2">
+<button class="w-8 h-8 rounded-full flex items-center justify-center text-slate-500 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">attach_file</span>
+</button>
+</div>
+<input class="w-full bg-white dark:bg-slate-900 border border-primary/10 dark:border-primary/20 rounded-2xl py-4 pl-14 pr-24 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary text-sm shadow-2xl" placeholder="Type a message or ask Assistant..." type="text"/>
+<div class="absolute inset-y-0 right-4 flex items-center gap-2">
+<button class="w-10 h-10 rounded-full flex items-center justify-center text-slate-500 hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined">mic</span>
+</button>
+<button class="w-10 h-10 rounded-xl bg-primary text-white flex items-center justify-center shadow-lg shadow-primary/30 transition-transform active:scale-95">
+<span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</div>
+<p class="text-center text-[10px] text-slate-500 mt-4 font-medium uppercase tracking-widest opacity-60">
+                    Velamini AI can make mistakes. Verify important info.
+                </p>
+</div>
+</main>
+<!-- Right Detail Panel (Optional/Contextual) -->
+<aside class="w-80 border-l border-primary/10 bg-background-light dark:bg-background-dark/30 hidden xl:flex flex-col p-6 overflow-y-auto">
+<h3 class="font-bold text-sm mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg">info</span>
+                Conversation Details
+            </h3>
+<div class="space-y-6">
+<div>
+<p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-3">Saved Links</p>
+<div class="bg-primary/5 rounded-xl p-4 border border-primary/10">
+<p class="text-xs font-medium text-primary truncate mb-1">design-trends-2024.com</p>
+<p class="text-[10px] text-slate-500 line-clamp-2 italic">"Use the bullet points from our meeting yesterday..."</p>
+</div>
+</div>
+<div>
+<p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-3">Upcoming Reminders</p>
+<div class="space-y-3">
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-sm">alarm</span>
+</div>
+<div>
+<p class="text-xs font-bold">Review Design Specs</p>
+<p class="text-[10px] text-slate-500">Today, 4:00 PM</p>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-6 border-t border-primary/10">
+<div class="rounded-2xl overflow-hidden relative aspect-video shadow-lg">
+<div class="absolute inset-0 bg-primary/20 mix-blend-multiply"></div>
+<img alt="Workspace Preview" class="w-full h-full object-cover" data-alt="Abstract purple and black gradient pattern" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAevhn1u0qgpry1iug5L6nhNTmAaxBB8SO4GanJi3s-U504YZ5pvvOFWeJyNNPC1aPBkuE30h_n3DwFASSR2YW71DCDezYiOay60qT3Gv4x1dmbk46BmcIi-nN6JF3szZW-N46lb9eqyiZnxVphF0On68KWgc4bnXs_-ib2xxErjlVhB89k_O2R5eXNV7J3CD3VU07QxKL14WVmYGg-DuNyed4XSqMASrJmePrEF5chg4ttzslY8uh4lls_Teq5v1IJEFJnpq1AEuA"/>
+<div class="absolute inset-0 flex flex-col justify-end p-4 bg-gradient-to-t from-background-dark/80 to-transparent">
+<p class="text-xs font-bold text-white">Visual Workspace</p>
+<p class="text-[10px] text-slate-300">3 active canvases</p>
+</div>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</body></html>

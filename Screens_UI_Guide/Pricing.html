@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pricing | Velamini</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#7311d4",
+                        "background-light": "#f7f6f8",
+                        "background-dark": "#191022",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen">
+<div class="relative flex h-auto w-full flex-col overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Navigation -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/20 px-6 md:px-20 py-4 bg-background-light/50 dark:bg-background-dark/50 backdrop-blur-md sticky top-0 z-50">
+<div class="flex items-center gap-3 text-primary">
+<div class="size-6 bg-primary rounded flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-lg">layers</span>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-xl font-bold leading-tight tracking-tight">Velamini</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8 items-center">
+<nav class="flex items-center gap-9">
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#">Product</a>
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#">Features</a>
+<a class="text-primary text-sm font-bold" href="#">Pricing</a>
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#">About</a>
+</nav>
+<button class="flex min-w-[120px] cursor-pointer items-center justify-center rounded-xl h-10 px-5 bg-primary text-white text-sm font-bold transition-transform hover:scale-105 active:scale-95">
+                        Get Started
+                    </button>
+<div class="size-10 rounded-full border border-primary/30 bg-primary/10 flex items-center justify-center overflow-hidden">
+<img class="size-full object-cover" data-alt="User profile avatar placeholder" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTT_6AAeJjaHZqKEVlXaDLL-bMS4WuN_F2vXcLhvXuHxafim634G74PduOkIgfyZcjMRej6_7dW4l6jC2Xs-5ZXkx0252R4jBvBbh4EU8L3d_YnuVk312JGytWYDgN-H2qrA6jmOJ91mlTOazd9B3rc3EblF6ZfNnqCYY5IQzlB7VOtH2FbtkvXqSKcWwqtCI_r4sZ-P0ZDXyJiMe07RIk8K1NHgT_OdYt4xbEakGWKu1m74QwwTF5QF9KsGCwOaktCRD1cd1dHH0"/>
+</div>
+</div>
+<!-- Mobile Menu Icon -->
+<div class="md:hidden">
+<span class="material-symbols-outlined text-slate-900 dark:text-slate-100">menu</span>
+</div>
+</header>
+<main class="flex flex-1 flex-col items-center">
+<!-- Hero Section -->
+<div class="max-w-[1200px] w-full px-6 py-16 md:py-24 text-center">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold mb-6 uppercase tracking-widest">
+                        Pricing Plans
+                    </div>
+<h1 class="text-slate-900 dark:text-slate-100 text-4xl md:text-6xl font-black leading-tight tracking-tight mb-6">
+                        Scale your vision with <span class="text-primary">Velamini</span>
+</h1>
+<p class="text-slate-600 dark:text-slate-400 text-lg md:text-xl max-w-2xl mx-auto mb-10">
+                        Choose the plan that's right for you or your team. Upgrade, downgrade, or cancel at any time with no hidden fees.
+                    </p>
+<div class="flex flex-wrap justify-center gap-4">
+<button class="flex min-w-[160px] cursor-pointer items-center justify-center rounded-xl h-12 px-6 bg-primary text-white text-base font-bold shadow-lg shadow-primary/20">
+                            Start Free Trial
+                        </button>
+<button class="flex min-w-[160px] cursor-pointer items-center justify-center rounded-xl h-12 px-6 bg-slate-200 dark:bg-slate-800 text-slate-900 dark:text-slate-100 text-base font-bold">
+                            View Documentation
+                        </button>
+</div>
+</div>
+<!-- Pricing Grid -->
+<div class="max-w-[1200px] w-full px-6 pb-24 grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Free Plan -->
+<div class="flex flex-col gap-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/5 dark:bg-slate-900/40 p-8 hover:border-primary/50 transition-all group">
+<div class="flex flex-col gap-2">
+<h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold">Personal Free</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm">Perfect for hobbyists and solo explorers.</p>
+<div class="flex items-baseline gap-1 mt-4">
+<span class="text-slate-900 dark:text-slate-100 text-5xl font-black tracking-tighter">$0</span>
+<span class="text-slate-500 dark:text-slate-400 text-lg font-medium">/month</span>
+</div>
+</div>
+<button class="w-full flex cursor-pointer items-center justify-center rounded-xl h-12 bg-slate-200 dark:bg-slate-800 text-slate-900 dark:text-slate-100 text-sm font-bold group-hover:bg-slate-300 dark:group-hover:bg-slate-700 transition-colors">
+                            Get Started
+                        </button>
+<hr class="border-slate-200 dark:border-slate-800"/>
+<div class="flex flex-col gap-4">
+<div class="flex gap-3 text-sm">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                1 Active Project
+                            </div>
+<div class="flex gap-3 text-sm">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Basic Analytics
+                            </div>
+<div class="flex gap-3 text-sm">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Community Support
+                            </div>
+<div class="flex gap-3 text-sm text-slate-400">
+<span class="material-symbols-outlined text-slate-600 text-lg">block</span>
+                                Custom Domains
+                            </div>
+</div>
+</div>
+<!-- Pro Plan -->
+<div class="flex flex-col gap-6 rounded-xl border-2 border-primary bg-primary/5 dark:bg-primary/10 p-8 relative shadow-2xl shadow-primary/10 transform md:-translate-y-4 scale-105 z-10">
+<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-4 py-1.5 rounded-full">
+                            Most Popular
+                        </div>
+<div class="flex flex-col gap-2">
+<h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold">Personal Pro</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm">For serious creators who need power.</p>
+<div class="flex items-baseline gap-1 mt-4">
+<span class="text-slate-900 dark:text-slate-100 text-5xl font-black tracking-tighter">$19</span>
+<span class="text-slate-500 dark:text-slate-400 text-lg font-medium">/month</span>
+</div>
+</div>
+<button class="w-full flex cursor-pointer items-center justify-center rounded-xl h-12 bg-primary text-white text-sm font-bold shadow-lg shadow-primary/30">
+                            Upgrade Now
+                        </button>
+<hr class="border-primary/20"/>
+<div class="flex flex-col gap-4">
+<div class="flex gap-3 text-sm font-medium">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Unlimited Projects
+                            </div>
+<div class="flex gap-3 text-sm font-medium">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Advanced Analytics
+                            </div>
+<div class="flex gap-3 text-sm font-medium">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Custom Domains
+                            </div>
+<div class="flex gap-3 text-sm font-medium">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Priority Email Support
+                            </div>
+<div class="flex gap-3 text-sm font-medium">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                100GB Storage
+                            </div>
+</div>
+</div>
+<!-- Organization Plan -->
+<div class="flex flex-col gap-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-white/5 dark:bg-slate-900/40 p-8 hover:border-primary/50 transition-all group">
+<div class="flex flex-col gap-2">
+<h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold">Organization</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm">Scalable infrastructure for businesses.</p>
+<div class="flex items-baseline gap-1 mt-4">
+<span class="text-slate-900 dark:text-slate-100 text-5xl font-black tracking-tighter">$49</span>
+<span class="text-slate-500 dark:text-slate-400 text-lg font-medium">/month</span>
+</div>
+</div>
+<button class="w-full flex cursor-pointer items-center justify-center rounded-xl h-12 bg-slate-200 dark:bg-slate-800 text-slate-900 dark:text-slate-100 text-sm font-bold group-hover:bg-slate-300 dark:group-hover:bg-slate-700 transition-colors">
+                            Contact Sales
+                        </button>
+<hr class="border-slate-200 dark:border-slate-800"/>
+<div class="flex flex-col gap-4">
+<div class="flex gap-3 text-sm">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Everything in Pro
+                            </div>
+<div class="flex gap-3 text-sm">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Team Workspaces
+                            </div>
+<div class="flex gap-3 text-sm">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                SSO &amp; SAML Security
+                            </div>
+<div class="flex gap-3 text-sm">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Dedicated Success Manager
+                            </div>
+<div class="flex gap-3 text-sm">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Custom Contracts
+                            </div>
+</div>
+</div>
+</div>
+<!-- Feature Comparison Table -->
+<div class="max-w-[1200px] w-full px-6 pb-32 overflow-x-auto">
+<h2 class="text-slate-900 dark:text-slate-100 text-3xl font-bold text-center mb-12">Detailed Comparison</h2>
+<div class="min-w-[800px] border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden bg-white/5 dark:bg-slate-900/20 backdrop-blur-sm">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-slate-100 dark:bg-slate-800/50">
+<th class="p-6 text-sm font-bold uppercase tracking-wider text-slate-500">Feature</th>
+<th class="p-6 text-sm font-bold uppercase tracking-wider text-slate-900 dark:text-slate-100">Free</th>
+<th class="p-6 text-sm font-bold uppercase tracking-wider text-primary">Pro</th>
+<th class="p-6 text-sm font-bold uppercase tracking-wider text-slate-900 dark:text-slate-100">Organization</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-slate-200 dark:divide-slate-800">
+<!-- Core Rows -->
+<tr>
+<td class="p-6 text-sm">Active Projects</td>
+<td class="p-6 text-sm">1</td>
+<td class="p-6 text-sm font-bold">Unlimited</td>
+<td class="p-6 text-sm font-bold">Unlimited</td>
+</tr>
+<tr>
+<td class="p-6 text-sm">Storage Capacity</td>
+<td class="p-6 text-sm">500MB</td>
+<td class="p-6 text-sm">100GB</td>
+<td class="p-6 text-sm font-bold">Custom</td>
+</tr>
+<tr>
+<td class="p-6 text-sm">Monthly API Requests</td>
+<td class="p-6 text-sm">10,000</td>
+<td class="p-6 text-sm">500,000</td>
+<td class="p-6 text-sm font-bold">Unlimited</td>
+</tr>
+<tr>
+<td class="p-6 text-sm">Custom Domains</td>
+<td class="p-6 text-sm text-slate-400 dark:text-slate-600">—</td>
+<td class="p-6 text-sm">Up to 3</td>
+<td class="p-6 text-sm font-bold">Unlimited</td>
+</tr>
+<tr>
+<td class="p-6 text-sm">Team Collaboration</td>
+<td class="p-6 text-sm text-slate-400 dark:text-slate-600">—</td>
+<td class="p-6 text-sm text-slate-400 dark:text-slate-600">—</td>
+<td class="p-6 text-sm">
+<span class="material-symbols-outlined text-primary">check</span>
+</td>
+</tr>
+<tr>
+<td class="p-6 text-sm">Advanced Security (SSO)</td>
+<td class="p-6 text-sm text-slate-400 dark:text-slate-600">—</td>
+<td class="p-6 text-sm text-slate-400 dark:text-slate-600">—</td>
+<td class="p-6 text-sm">
+<span class="material-symbols-outlined text-primary">check</span>
+</td>
+</tr>
+<tr>
+<td class="p-6 text-sm">Support Response Time</td>
+<td class="p-6 text-sm">72 Hours</td>
+<td class="p-6 text-sm">12 Hours</td>
+<td class="p-6 text-sm font-bold text-primary">Instant Chat</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Enterprise Banner -->
+<div class="max-w-[1200px] w-full px-6 pb-32">
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-r from-primary to-primary/60 p-12 flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="relative z-10 text-center md:text-left">
+<h2 class="text-white text-3xl font-black mb-4 tracking-tight">Need a custom solution for your enterprise?</h2>
+<p class="text-white/80 text-lg max-w-xl">
+                                We offer customized plans with advanced security, auditing tools, and 24/7 dedicated engineering support for large teams.
+                            </p>
+</div>
+<div class="relative z-10">
+<button class="bg-white text-primary font-black py-4 px-10 rounded-xl hover:bg-slate-100 transition-colors shadow-xl">
+                                Contact Enterprise Sales
+                            </button>
+</div>
+<!-- Abstract decorative shapes -->
+<div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 size-96 bg-white/10 rounded-full blur-3xl"></div>
+<div class="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/2 size-96 bg-black/10 rounded-full blur-3xl"></div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/50 py-16 px-6 md:px-20">
+<div class="max-w-[1200px] mx-auto grid grid-cols-2 md:grid-cols-5 gap-10">
+<div class="col-span-2">
+<div class="flex items-center gap-3 text-primary mb-6">
+<div class="size-6 bg-primary rounded flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-sm">layers</span>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-xl font-bold leading-tight tracking-tight">Velamini</h2>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm max-w-xs leading-relaxed">
+                            Building the future of digital architecture. Simple, powerful, and built for everyone from solo creators to enterprise teams.
+                        </p>
+</div>
+<div>
+<h4 class="text-slate-900 dark:text-slate-100 font-bold mb-6 text-sm uppercase tracking-wider">Product</h4>
+<ul class="flex flex-col gap-4 text-sm text-slate-500 dark:text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">Features</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Pricing</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">API Reference</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Integrations</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-slate-900 dark:text-slate-100 font-bold mb-6 text-sm uppercase tracking-wider">Company</h4>
+<ul class="flex flex-col gap-4 text-sm text-slate-500 dark:text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Blog</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Press Kit</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-slate-900 dark:text-slate-100 font-bold mb-6 text-sm uppercase tracking-wider">Support</h4>
+<ul class="flex flex-col gap-4 text-sm text-slate-500 dark:text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">Help Center</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Status</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Privacy</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-[1200px] mx-auto mt-16 pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-slate-500 dark:text-slate-500 text-xs">
+                        © 2024 Velamini Inc. All rights reserved.
+                    </p>
+<div class="flex gap-6">
+<a class="text-slate-500 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-xl">public</span></a>
+<a class="text-slate-500 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-xl">share</span></a>
+<a class="text-slate-500 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-xl">alternate_email</span></a>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</body></html>
