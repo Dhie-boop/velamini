@@ -70,13 +70,13 @@ export function PublicLayout({ children }: PublicLayoutProps) {
             </nav>
 
             {/* Actions */}
-            <div className="relative z-[101] flex items-center gap-3">
-              <Link href="/dashboard" className="hidden sm:block">
-                <Button>Get Started</Button>
+            <div className="relative z-[101] flex items-center gap-2 sm:gap-3">
+              <Link href="/login" className="hidden sm:block">
+                <Button variant="ghost">Login</Button>
               </Link>
-              <div className="hidden sm:flex h-10 w-10 rounded-full border border-primary/30 bg-primary/10 items-center justify-center">
-                <Icon name="account_circle" className="text-primary" />
-              </div>
+              <Link href="/signup" className="hidden sm:block">
+                <Button>Sign Up</Button>
+              </Link>
 
               {/* Mobile Menu Toggle */}
               <button
@@ -108,11 +108,18 @@ export function PublicLayout({ children }: PublicLayoutProps) {
               </Link>
             ))}
             <Link
-              href="/dashboard"
+              href="/login"
               onClick={() => setMobileMenuOpen(false)}
               className="block"
             >
-              <Button className="w-full mt-2">Get Started</Button>
+              <Button variant="ghost" className="w-full mt-2">Login</Button>
+            </Link>
+            <Link
+              href="/signup"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block"
+            >
+              <Button className="w-full mt-2">Sign Up</Button>
             </Link>
           </nav>
         </div>
